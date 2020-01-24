@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="../styles.css">
+        <script src="main.js"></script>
+        <script src="global.js"></script>
+        <script src="presidents.js"></script>
+        <script src="../utilities.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/sweetalert2@9"></script>
+
+        <title>Lab 4: Q and A</title>
+    </head>
+    <body onload="init()">
+        <header>
+            <nav>
+                <ul>
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="../Version1/index.html">Version 1</a></li>
+                    <li><a href="../Version2/index.html">Version 2</a></li>
+                    <li><a href="../Version3/index.html">Version 3</a></li>
+                </ul>
+            </nav>
+            <br><br>
+            <h1>Q and A</h1>
+            <h2>Regan Laurell</h2>
+        </header>
+        <div>
+            <section>
+                <p id="question">question: </p>
+                <p id="answer">answer: </p>
+                
+                <input id="input-guess" type="text" placeholder="Enter guess here"/>
+                <button id="guess-button" class="button" onclick="guessAnswer();">Submit Guess</button>
+
+                <br>
+
+                <button onclick="showQuestion();">new question</button>
+                <button onclick="showAnswer();">show answer</button>
+                
+                <hr>
+                <button id="show-data" onclick="showAllData();">show all data</button>
+                <button id="hide-data" onclick="hideAllData();">hide all data</button>
+                <hr>
+                <div id="dataArea"></div>
+            </section>
+        </div>
+</html>
